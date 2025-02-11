@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2adv-markup</title>
+</head>
+<body>
 
+  <section>
+    <h1>Lists</h1>
+    <p>There are three kinds of lists: ordered, unordered, and definition. List items are wrapped in a list container.</p>
+    <h2>Ordered List</h2>
+      <ol>
+        <li>Item one</li>
+        <li>Second item</li>
+        <li>Another item</li>
+        <li>Last one</li>
+      </ol>
+    <h2>Unordered List</h2>
+      <ul>
+        <li>First same</li>
+        <li>Not again</li>
+        <li>
+          <ul>
+            <li>Lists can be</li>
+            <li>Nested to</li>
+            <li>Arbitrary depth</li>
+          </ul>
+        </li>
+        <li>Henceforth</li>
+      </ul>
+      <h2>Defitinion List</h2>
+        <dl>
+          <dt>Defitinion Term</dt>
+          <dd>Defitinion details include more information.</dd>
+          <dd>Lists, by definition, include more than one item.</dd>
+          <dd>Definition lists are hardly ever used, so . . . </dd>
+        </dl>
+  </section>
+  
+  <section>
+    <h1>Links</h1>
+    <p>
+      Links use the a tag and display inline. They must have an href attribute and can use target to open in <a href="https://google.com" target="_blank">a new tab</a>.
+    </p>
+    <p>Links have different <a href="https://random.com">psuedo-class states</a>, if they're hovered or have been visited, for example.</p>
+  </section>
+  
+  <section>
+    <h1>Images</h1>
+    <p>Images use the img tag, which is self-closing, and they might be inside a figure tag. Images use the src= attribute to point to the source, which could be anywhere. Images display inline by default.</p>
+    <p>
+      <img src="https://picsum.photos/200" alt="random image">
+      &nbsp; See?
+    </p>
+    <h2>Figures</h2>
+    <figure>
+      <img src="https://picsum.photos/200/300" alt="another random">
+      <figcaption>Figures can have captions and display block.</figcaption>
+    </figure> &nbsp; See?
+  </section>
+  
+</body>
+</html>
