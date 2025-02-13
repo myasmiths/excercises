@@ -1,0 +1,54 @@
+:root {
+  font-size: 62.5%; 
+  --std: all .3s ease-in; /*-- another variable --*/
+}
+body {
+  width: 100vw;
+  font-size: 1.8rem;
+  margin: 0 auto 1rem auto; /*-- top, right, bottom, left --*/
+  padding: 5px 10px; /*-- vertical, horizontal --*/
+}
+/*-- flex container --*/
+nav.main-nav { 
+  height: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /*-- main-axis --*/ 
+  align-items: center; /*-- cross-axis --*/ 
+}
+/*-- flex item --*/
+a.nav-item {
+  justify-self: self-end; 
+  align-self: flex-start; 
+  flex: 0 1 auto; /*-- grow, shrink, basis --*/
+  transition: var(--std);
+}
+a.nav-item:last-of-type { /*-- last-of-type selector --*/
+  margin-left: auto;
+}
+.box {
+  position: relative; /*-- in flow --*/
+  left: 1vw; /*-- from itself --*/
+  min-width: 200px; /*-- not less than --*/
+  max-height: 20rem; /*-- not more than --*/
+  border: 2px dashed #CCC; /*-- thickness, style, color --*/
+  border-radius: 10px 10px 0 0; /*-- clockwise from top-left corner --*/
+  box-shadow: 2px 2px 16px 1px #000; /*-- x, y, blur, spread, color --*/
+}
+.circle {
+  position: absolute; /*-- out of flow --*/ 
+  top: 50px; /*-- from closest positioned ancestor --*/ 
+  background-color: rgba(125,125,125,0.9); /*-- red, green, blue, alpha --*/
+  opacity: .9; /*-- 0 to 1 --*/
+  width: 200px; 
+  height: 200px;
+  border-radius: 100%; /*-- circular --*/
+}
+span {
+  text-shadow: 1px 1px 6px #000; /*-- x, y, blur, color --*/
+}
+@media screen and (max-width: 768px) { /*-- 768 and smaller --*/ 
+  nav {
+    flex-direction: column;
+  }
+}
