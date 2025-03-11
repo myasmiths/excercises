@@ -1,0 +1,57 @@
+body {
+    background-image: url('../up/one/level/to/image.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+  }
+  .splash-area {
+    background: linear-gradient(to left top, blue, red);
+  }
+  .second-splash {
+    background: linear-gradient(45deg blue, rebeccapurple 40%, red);
+    text-shadow: 1px 1px 0 black,
+                 -1px -1px 0 black,
+                 -1px 1px 0 black,
+                 1px -1px 0 black;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: min-content;
+    justify-items: start;
+    align-items: end;
+    column-gap: 2rem;
+    row-gap: 1rem;
+  }
+  .one-grid-child {
+    justify-self: stretch;
+    align-self: start;
+    place-self: center;
+  }
+  .another-grid {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-areas: header header header,
+                         splash splash splash,
+                         first second third,
+                         main main sidebar,
+                         footer footer footer;
+  }
+  header {
+    grid-area: header;
+  }
+  .splash-item {
+    grid-area: splash;
+  }
+  .parent-el {
+    position: relative; /*--needed to position children --*/
+  }
+  .positioned-el {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+  .positioned-el:hover {
+    transform: scale(1.2);
+  }
