@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5forms</title>
+  <style>
+    body{width:80%;margin:auto;}
+    form,table,th,td{padding:1rem;border: 1px solid #CCC;border-collapse:collapse;}
+    div{margin:1.5rem auto;}
+  </style>
+</head>
+<body>
+  <h1>Form</h1>
+  <form action="" method="get" class="form-wrap">
+    <div>
+      <label for="name">Text input: </label>
+      <input type="text" name="name" id="name" required />
+    </div>
+    <div>
+      <label for="email">Email input: </label>
+      <input type="email" name="email" id="email" required />
+    </div>
+    <div>
+      <input type="submit" value="Submit input" />
+    </div>
+    <fieldset style="display:inline-block;">
+      <legend>Do you agree to the terms?</legend>
+      <label><input type="radio" name="radio" value="yes" /> Yes</label>
+      <label><input type="radio" name="radio" value="no" /> No</label>
+    </fieldset>
+  </form>
+  <table>
+    <caption>
+      <h1>Table</h1>
+    </caption>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+    </tr>
+    <tr>
+      <td>Jane</td>
+      <td>Doe</td>
+    </tr>
+  </table>
+</body>
+</html>
