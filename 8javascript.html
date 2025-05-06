@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic JavaScript Example</title>
+</head>
+<body>
+
+<script>
+  // If-Else Statements
+  let temperature = 30;
+
+  if (temperature > 70) {
+    console.log("It's a hot day!");
+  } else if (temperature >= 40 && temperature <= 60) {
+    console.log("The weather is fine.");
+  } else {
+    console.log("It's a cold day!");
+  }
+
+  // For Loop
+  console.log("\nFor Loop:");
+  for (let i = 1; i <= 5; i++) {
+    console.log("This is iteration number " + i);
+  }
+
+  // While Loop
+  console.log("\nWhile Loop:");
+  let count = 0;
+
+  while (count < 5) {
+    console.log("This is iteration number " + (count + 1));
+    count++;
+  }
+
+  // Arrays
+  console.log("\nArrays:");
+  let colors = ["red", "green", "blue"];
+
+  console.log("Colors:", colors);
+  console.log("First color:", colors[0]);
+
+</script>
+
+</body>
+</html>
